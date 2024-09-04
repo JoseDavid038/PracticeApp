@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Olympic</string>
+
+    <!--    Activity Login-->
+    <string name="title_login">Sign in</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+
+    <string name="title_event">Sporting events</string>
+    <string name="user_account">Create Account</string>
+    <string name="user">User</string>
+    <string name="title_ecoapp">¡My EcoApp. Great!</string>
+    <string name="forgot">Forgot your Password?</string>
+    <string name="close_session">Are you sure to log out?</string>
+
+
+</resources>
+
+
+
+

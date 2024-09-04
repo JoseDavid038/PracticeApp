@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HolaJose</string>
+
+    <!--    Activity Login-->
+    <string name="title_login">Iniciar sesión</string>
+    <string name="email">Correo Electronico</string>
+    <string name="password">Contraseña</string>
+    <string name="title_event">Eventos Deportivos</string>
+    <string name="user_account">Crear Cuenta</string>
+    <string name="user">Usuario</string>
+    <string name="title_ecoapp">¡Mi EcoApp. Genial!</string>
+    <string name="forgot">¿Olvidaste tu Contraseña?</string>
+    <string name="close_session">¿Estas serguro de cerrar sesión?</string>
+</resources>

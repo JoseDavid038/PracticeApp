@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EcoAppLoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_background" />
+
+    <ImageView
+        android:id="@+id/imvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:src="@drawable/login_logo" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:scaleType="fitEnd"
+        android:src="@drawable/login_footnote" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100dp"
+        android:text="@string/title_ecoapp"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp">
+
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/login_edittext_background"
+            android:hint="@string/user"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/login_edittext_background"
+            android:hint="@string/password"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"/>
+
+        <CheckBox
+            android:id="@+id/chbTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="I agree to the terms and conditions."
+            android:buttonTint="@color/orange"/>
+
+<!--        <Switch-->
+<!--            android:id="@+id/swiSession"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="#ffa500"-->
+<!--            android:background="@color/black"-->
+<!--            android:textStyle="bold"-->
+<!--            android:text="Stay signed in?"-->
+<!--            android:paddingHorizontal="50dp"-->
+<!--            tools:ignore="UseSwitchCompatOrMaterialXml"/>-->
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swiSession"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:textStyle="bold"
+            android:textColor="#ffa500"
+            android:text="Stay signed in?"
+            android:paddingHorizontal="50dp"
+            android:checked="false"
+            app:trackTint="@drawable/track_color"
+            app:thumbTint="@drawable/thumb_color"/>
+
+        <Button
+            android:id="@+id/btnSignIn"
+            style="@style/button_purple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_login"
+            android:paddingVertical="15dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="signIn"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:onClick="goToLogin"/>
+
+    </LinearLayout>
+
+</FrameLayout>

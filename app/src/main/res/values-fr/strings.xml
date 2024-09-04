@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SalutJose</string>
+
+    <!--    Activity Login-->
+    <string name="title_login">Se connecter</string>
+    <string name="email">Courriel</string>
+    <string name="password">Mot de passe</string>
+    <string name="title_event">Manifestations sportives</string>
+    <string name="user_account">Créer un compte</string>
+    <string name="user">Utilisateur</string>
+    <string name="title_ecoapp">¡My EcoApp. Super !</string>
+    <string name="forgot">Vous avez oublié votre mot de passe ?</string>
+    <string name="close_session">Etes-vous sûr de fermer la séance ?</string>
+</resources>
