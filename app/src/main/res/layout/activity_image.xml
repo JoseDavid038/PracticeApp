@@ -6,13 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ImageActivity">
-    
+
+<!--    app:shapeAppearanceOverlay="@style/rounded_square"-->
     <com.google.android.material.imageview.ShapeableImageView
         android:layout_width="350dp"
         android:layout_height="300dp"
         android:src="@drawable/paris"
         android:scaleType="centerCrop"
-        app:shapeAppearanceOverlay="@style/rounded_square"
+
+        app:shapeAppearanceOverlay="@style/RoundedSquare"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

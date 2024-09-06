@@ -12,4 +12,7 @@
     <string name="title_ecoapp">¡Mi EcoApp. Genial!</string>
     <string name="forgot">¿Olvidaste tu Contraseña?</string>
     <string name="close_session">¿Estas serguro de cerrar sesión?</string>
+    <string name="contact">Contacto</string>
+    <string name="information">Información</string>
+    <string name="support">Soporte</string>
 </resources>

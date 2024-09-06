@@ -4,13 +4,20 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -104,5 +111,36 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_actionbar, menu);
+
+        for (int i = 0; i < menu.size(); i++){
+            MenuItem menuItem = menu.getItem(i);
+            SpannableString title = new SpannableString(menuItem.getTitle());
+            title.setSpan(new ForegroundColorSpan(Color.WHITE),0, title.length(), 0);
+            menuItem.setTitle(title);
+        }
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        if (item.getItemId() == R.id.ite_contact){
+            Toast.makeText(this, "You've selected contact", Toast.LENGTH_SHORT).show();
+        }
+
+        if (item.getItemId() == R.id.ite_information){
+            Toast.makeText(this, "You've selected information", Toast.LENGTH_SHORT).show();
+        }
+
+        if (item.getItemId() == R.id.ite_support){
+            Toast.makeText(this, "You've selected support", Toast.LENGTH_SHORT).show();
+        }
+
+        return true;
     }
 }
